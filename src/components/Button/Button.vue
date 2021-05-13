@@ -1,5 +1,10 @@
 <template>
-  <button class="btn" :class="['btn-' + color, btnClass]">
+  <button
+    class="btn"
+    :class="['btn-' + color, btnClass]"
+    :style="btnStyles"
+    id="btn"
+  >
     <span class="btn-label">{{ label }}</span>
   </button>
 </template>
@@ -27,23 +32,41 @@ export default {
     },
     g1: {
       type: String,
-      default: "#ffffff"
+      default: "#ffffff",
     },
     g2: {
       type: String,
-      default: "#000000"
+      default: "#000000",
     },
+    dir: {
+      type:String,
+      default: 'to left'
+    },
+    size: {
+      type: String,
+      default:'md'
+    }
   },
   computed: {
     btnClass() {
       return {
-        "btn": true,
+        btn: true,
         "btn-rounded": this.rounded,
         "btn-outlined": this.outlined,
         "btn-gradient": this.gradient,
-        "--g1": this.g1,
-        "--g2": this.g2,
       };
+    },
+    btnStyles() {
+      if (this.gradient) {
+        return {
+          '--g1': this.g1,
+          '--g2': this.g2,
+          '--dir': this.dir
+
+          // "background-color": this.g1,
+        };
+      }
+      return ''
     },
   },
 };
@@ -76,7 +99,7 @@ export default {
 }
 .btn-default {
   color: #575757;
-  background: #f7f7fa;
+  background: $default;
   transition: color 0.2s linear, background-color 0.3s linear;
   &:hover {
     color: #575757;
@@ -165,7 +188,8 @@ export default {
 }
 
 .btn-gradient {
-    background-color: var(--g1);
-//   background-image: linear-gradient(to left, var(--g1), yellow)
+  // background-color: var(--g-color);
+    background-image: linear-gradient(var(--dir), var(--g1), var(--g2));
+    color: white
 }
 </style>
