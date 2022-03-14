@@ -30,9 +30,24 @@ const routes = [
     component: () => import('../views/Message.vue')
   },
   {
-    path: '/notification',
-    name: 'Notification',
-    component: () => import('../views/Notification.vue')
+    path: '/input',
+    name: 'Input',
+    component: () => import('../views/Input.vue')
+  },
+  {
+    path: '/icon-button',
+    name: 'Icon Button',
+    component: () => import('../components/Button/IconButton.vue')
+  },
+  {
+    path: '/banner',
+    name: 'Banner',
+    component: () => import('../components/Banner/Banner.vue')
+  },
+  {
+    path: '/card',
+    name: 'Card',
+    component: () => import('../components/Card/Card.vue')
   },
 ]
 

@@ -6,6 +6,8 @@
     <Button label="Default" color="default" />
     <Button label="Primary" color="primary" />
     <Button label="Link" color="link" />
+    <h2>Icon Button</h2>
+    <IconButton />
     <h2>
       Severities
     </h2>
@@ -83,7 +85,10 @@
 </template>
 
 <script>
-export default {};
+import IconButton from "@/components/Button/IconButton.vue"
+export default {
+  components: {IconButton}
+};
 </script>
 
 <style></style>

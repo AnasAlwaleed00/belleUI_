@@ -6,14 +6,19 @@ import store from './store'
 
 import Button from '@/components/Button/Button'
 import Message from '@/components/Message/Message'
-import Notification from '@/components/Notification/Notification'
-import NotificationsList from '@/components/Notification/NotificationsList'
 
 
 Vue.component('Button', Button)
 Vue.component('Message', Message)
-Vue.component('Notification', Notification)
-Vue.component('NotificationsList', NotificationsList)
+
+
+import Unicon from 'vue-unicons/dist/vue-unicons-vue2.umd'
+import { uniExclamationCircle, uniPlus, uniLocationArrow, uniApple, uniTimes, uniExclamationTriangle, uniExclamationOctagon, uniCheckCircle } from 'vue-unicons/dist/icons'
+
+Unicon.add([uniExclamationCircle, uniPlus, uniLocationArrow, uniApple, uniTimes, uniExclamationTriangle, uniExclamationOctagon, uniCheckCircle])
+Vue.use(Unicon)
+
+
 Vue.config.productionTip = false
 
 new Vue({

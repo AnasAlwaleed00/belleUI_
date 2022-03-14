@@ -11,9 +11,11 @@
 </template>
 
 <script>
+
 /**
  * TODO: Add with icons
  */
+ 
 export default {
   name: "Message",
   props: {
