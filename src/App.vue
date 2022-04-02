@@ -12,9 +12,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 #app {
-  font-family: 'Sora', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,7 +26,8 @@ body {
 }
 /* Define styles for the default root window element */
 :root {
-  --background-color-primary: #ebebeb;
+  // --background-color-primary: #ebebeb;
+  --background-color-primary: #ffffff;
   --background-color-secondary: #fafafa;
   --accent-color: #cacaca;
   --text-primary-color: #222;

@@ -92,6 +92,7 @@ export default {
   line-height: 1.42857143;
   border-radius: 6px;
   margin-right: 4px;
+  font-family: sans-serif;
   &:disabled {
     cursor: default;
     background-color: #7ac0f8;

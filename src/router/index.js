@@ -49,6 +49,21 @@ const routes = [
     name: 'Card',
     component: () => import('../components/Card/Card.vue')
   },
+  {
+    path: '/modal',
+    name: 'Modal',
+    component: () => import('../components/Modal/Modal.vue')
+  },
+  {
+    path: '/toast',
+    name: 'Toast',
+    component: () => import('../views/Toast.vue')
+  },
+  {
+    path: '/accordion',
+    name: 'Accordion',
+    component: () => import('../views/Accordion.vue')
+  },
 ]
 
 const router = new VueRouter({

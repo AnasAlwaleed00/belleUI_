@@ -3,6 +3,9 @@
     <div class="nav-bar">
       <ul>
         <li>
+          <router-link to="/accordion">Accordion</router-link>
+        </li>
+        <li>
           <router-link to="/banner">Banner</router-link>
         </li>
         <li>
@@ -14,10 +17,16 @@
         <li>
           <router-link to="/message">Message</router-link>
         </li>
+        <li>
+          <router-link to="/modal">Modal</router-link>
+        </li>
+        <li>
+          <router-link to="/toast">Toast</router-link>
+        </li>
       </ul>
       <theme-button />
     </div>
-    <hr>  
+    <hr />
   </div>
 </template>
 
