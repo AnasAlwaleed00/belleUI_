@@ -64,6 +64,12 @@ const routes = [
     name: 'Accordion',
     component: () => import('../views/Accordion.vue')
   },
+  {
+    path: '/tooltip',
+    name: 'Tooltip',
+    component: () => import('../views/Accordion.vue')
+  },
+  
 ]
 
 const router = new VueRouter({

@@ -15,6 +15,9 @@
           <router-link to="/card">Card</router-link>
         </li>
         <li>
+          <router-link to="/input">Input</router-link>
+        </li>
+        <li>
           <router-link to="/message">Message</router-link>
         </li>
         <li>
